@@ -8,16 +8,11 @@ const double p =   0.8;
 
 double factorial(int n)
 {
-  if (n > 0) {
-    double s = 1.0;
-
-    for (int i = 1; i <= n; i ++)
-      s *= i;
-
-    return s;
-  }
-  else if (n == 0) {
+  if (n == 0) {
     return 1.0;
+  }
+  else {
+    return factorial(n - 1) * n;
   }
 }
 
