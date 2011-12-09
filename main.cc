@@ -53,7 +53,7 @@ int main(int argc, char** argv)
 {
   double s = 0.0;
 
-  for (int k = 0; k < N; k ++)
+  for (int k = 0; k <= N; k ++)
     s += bindist(N, p, k);
 
   std::cout << std::fixed << s << std::endl;
