@@ -1,13 +1,13 @@
-all: bindist
+all: binomdist
 
-test: bindist
+test: binomdist
 	./$<
 
-bindist: main.cc
+binomdist: main.cc
 	$(CXX) -o $@ $<
 
 clean:
 	$(RM) *~
 
 distclean: clean
-	$(RM) bindist
+	$(RM) binomdist
